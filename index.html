@@ -3,6 +3,17 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>表格</title>
+		<style>
+			/*keyframes关键字 myfirst 动画名字 opacity 不透明度*/
+			@keyframes myfirst {
+				from {opacity: 0;}
+				to {opacity: 100;}
+			}
+			/* 应用到谁身上 animation特点(自己理解:调用动画) 一秒调用一次(只能调用一次) infinite 不断调用*/
+			table{
+				animation: myfirst 3s infinite;
+			}
+		</style>
 	</head>
 	<body>
 		<table border="1px" width="300px" heigh="300" cellspacing="0px " heing="center" align="center">
@@ -50,5 +61,6 @@
 		</tr>
 	</table>
         <img src='./img/dw1.jpg' border="0" alt="这是一张动物图片" height="300" width="408">
+		<audio src="bgm/xqg.mp3" autoplay="autoplay" controls="controls"></audio>
 	</body>
 </html>
